@@ -1,43 +1,67 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}homepage{% endblock %}
+{% block title %}Acceuil{% endblock %}
 
 {% block body %}
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+<!doctype html>
+
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Bienvenue chez les Bâtisseurs de rêve. </h1>
+      <p>L’association <span class="Nm-association">« Les Bâtisseurs de Rêves »</span> a été formé le 4 février 1995
+                conformément à la loi du 1er juillet 1901. Cette association a pour but d’initier, de promouvoir, de
+                défendre les jeux de simulation ainsi que de créer un centre d’activités ludiques dans l’agglomération
+                orléanaise. Le siège social est fixé à la Maison des Associations, 46 ter rue de Sainte Catherine, 45000
+                Orléans.
+                L’association comporte environ 45 membres permanents inscrits. Elle a pour raison de proposer aux membres
+                d’organiser des parties de jeux de rôle. Elle possède une ludothèque riche, à laquelle s’ajoute les jeux
+                détenus par les membres. Chaque semaine, et à longueur d’année, des de jeux de rôle sont organisées en
+                présentiel (autour d’une table) et sur Discord (en ligne). Les jeux vont du médiéval fantastique à la SF, en
+                passant par tous les genres, même les plus décalés.
+                L’association participe chaque année au festival Orléans Joue qui se tient au Campo Santo le dernier
+                week-end du mois d’août.<span class="Nm-association">Les Bâtisseurs de Rêves</span>  sont également présents début septembre lors de Rentrée en
+                fête, le rendez-vous annuel des Orléanais avec les 500 associations de la ville.
+                Depuis 2017, nous publions un livre annuel qui regroupe des illustrations, chroniques, interviews et textes
+                de fiction concoctés par des membres actifs de l’association.</p>
+      
+    </div>
   </div>
-</nav>
-<h1>Les Bâtisseurs de rêves<h1>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        
+        <p class="text-white bg-dark">Tous les samedi après_midi<br> à partir de 14h <br>Maison des Associations<br>46ter,rue Sainte-Catherine<br></p>
+        <p> <a class="btn btn-secondary" href="https://www.google.com/maps/dir/48.8081607,2.0650626/46+ter+Rue+Sainte-Catherine,+45000+Orl%C3%A9ans/@48.3789983,1.5618942,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47e4e4d3e1374bcb:0xd1d2c991d21610f8!2m2!1d1.9054851!2d47.90139" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        
+        <p class="text-white bg-dark">Chaque vendredi soir<br>à partir de 19h15<br>salle du foyer Saint-Vincent<br>46,rue du Champ Rond </p>
+        <p><a class="btn btn-secondary" href="https://www.google.com/maps/dir/48.8081607,2.0650626/46+Rue+du+Champ+Rond,+45000+Orl%C3%A9ans/@48.3847256,1.5619131,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47e4fb347cfbdc0d:0x1a271c8090469fb1!2m2!1d1.9163214!2d47.9084205" role="button">View details &raquo;</a></p>
+      </div><br>
+      
+      <div class="col-md-4">
+        
+        <p class="text-white bg-dark">L'organisation des parties est assurée par le CROM<br>Le Calendreier Rôlistique à Option Multiples<br>Les Maitres de jeus peuvent créer leurs parties en ligne<br>Les joueurs s'inscrivent en ligne es aussi</p>
+        <p><a class="btn btn-secondary" href="http://lbdr.fr/crom/index.php" role="button">View details &raquo;</a></p>
+      </div>
+    </div>
+
+    <hr>
+
+      <p class="text-white bg-dark" >45 000 ORLEANs </p>
+  </div> <!-- /container -->
+
+</main>
+
+
+</html>
+
 
 {% endblock %}

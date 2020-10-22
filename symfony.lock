@@ -84,6 +84,9 @@
     "egulias/email-validator": {
         "version": "2.1.22"
     },
+    "imagine/imagine": {
+        "version": "1.2.3"
+    },
     "laminas/laminas-code": {
         "version": "3.4.1"
     },
@@ -92,6 +95,15 @@
     },
     "laminas/laminas-zendframework-bridge": {
         "version": "1.1.1"
+    },
+    "liip/imagine-bundle": {
+        "version": "1.8",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.8",
+            "ref": "5a5bdc2d0e2533ed6935d5ae562f2b318a8fc1ee"
+        }
     },
     "monolog/monolog": {
         "version": "2.1.1"
@@ -430,6 +442,9 @@
     "symfony/string": {
         "version": "v5.1.7"
     },
+    "symfony/templating": {
+        "version": "v5.1.7"
+    },
     "symfony/test-pack": {
         "version": "v1.0.6"
     },
@@ -526,6 +541,15 @@
     },
     "symfony/yaml": {
         "version": "v5.1.7"
+    },
+    "tattali/calendar-bundle": {
+        "version": "1.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.1",
+            "ref": "0c643e17b5340747b35c2c75e11727fa31bfa9bb"
+        }
     },
     "twig/extra-bundle": {
         "version": "v3.0.5"

@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+{% set title = "Clients - Facture 3000" %}
+
+{% block title title %}
+
+{% block body %}
+<div class="container">
+
+    <header class="page-header">
+        <h2 class="page-title">{{ title }}</h2>
+    </header>
+
+    <div class="row">
+        <div class="col-12">
+
+            <div>
+                <strong>Nom</strong> {{ customer.lastname }}
+            </div>
+            <div>
+                <strong>Prénom</strong> {{ customer.firstname }}
+            </div>
+            <div>
+                <strong>Adresse</strong> {{ customer.address }}
+            </div>
+            <div>
+                <strong>Email</strong> {{ customer.email }}
+            </div>
+
+            <hr>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Facture #</th>
+                        <th>Montant</th>
+                        <td>action</td>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for invoice in customer.invoices %}
+                    <tr>
+                        <td>{{ invoice.number }}</td>
+                        <td>xxxx</td>
+                        <td><a href="{{ path('invoice:read', {uuid: invoice.id}) }}">Voir la facture</a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

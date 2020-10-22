@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class TermOfSaleController extends AbstractController
 {
     /**
-     * @Route("/term/of/sale", name="term_of_sale")
+     * @Route("/term_of_sale", name="term_of_sale")
      */
     public function index()
     {
