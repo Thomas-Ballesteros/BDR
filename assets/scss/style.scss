@@ -1,4 +1,166 @@
 @import"../../node_modules/bootstrap/scss/bootstrap.scss";
 
+@font-face {
+    font-family: "dancing";
+    src: url(../fonts/Dancing_Script/static/DancingScript-Bold.ttf) format("truetype");
+}
+
+body {
+    font-family: verdana;
+}
+
+main {
+    margin: 2rem 0;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: "dancing";
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+
+p {
+    text-align: justify;
+}
+
+nav a, footer a {
+    color: #FFF;
+}
+
+nav a:hover, footer a:hover {
+    color: #C2B30A;
+    text-decoration: none;
+}
+
+.bg-gradient {
+    background: rgb(12,34,57);
+    background: linear-gradient(90deg, rgba(12,34,57,1) 0%, rgba(27,103,150,1) 100%);
+}
+
+/* Main header */
+#calendar a {
+    color: #000;
+}
+
+.fc {
+    margin-bottom: 1rem;
+}
+
+.fc .fc-toolbar-title {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .fc-header-toolbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .fc-button-group {
+        margin: 1rem 0;
+    }
+} 
+
+header .navbar-brand {
+    font-family: "dancing";
+    font-size: 1.5rem;
+}
+
+header .nav-link, .navbar-brand, .dropdown-item {
+    text-transform: capitalize;
+    font-family: verdana;
+}
+
+header .navbar-toggler {
+    border-color: #FFF;
+}
+
+header .navbar-toggler-icon {
+    background-image: url(../img/burger.svg);
+}
+
+header .btn {
+    padding: .1rem;
+}
+
+header .btn-outline-success {
+    color: #FFF;
+    border-color: #FFF;
+}
+
+header .btn-outline-success:hover {
+    color: #FFF;
+    border-color: #FFF;
+    background-color: #1F0C30;
+}
+
+/* Main content */ain {
+    color: #000;
+    text-align: center;
+}
+
+main p {
+    margin: 3%;
+}
+
+main .iframe {
+    padding: 0;
+}
+
+main .bg-img-contact {
+    background-image: url(../img/pixiz.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    text-shadow: #FC0 1px 0 10px;
+    color: white;
+}
+
+main address {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+main address a {
+    color: #fff;
+}
+
+main form {
+    margin: 3% 0;
+}
+
+main form .form-control {
+    margin: 1rem 0;
+}
+
+main div.form-row.col-lg-12{
+    padding: 0;
+    margin: 0;
+}
+
+main .btn-submit {
+    background: rgb(27,103,150,1);
+    color: #fff;
+}
+
+/* Main footer */
 
 
+footer p {
+    text-align: center;
+}
+
+footer {
+    padding: 1rem;
+    color: #FFF;
+    text-transform: capitalize;
+  }
+  
+  footer p {
+    text-align: center;
+  }

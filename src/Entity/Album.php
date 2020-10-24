@@ -30,7 +30,7 @@ class Album
     private $content;
 
     /**
-     * @ORM\OneToMany(targetEntity=Images::class, mappedBy="album", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity=Images::class, mappedBy="album", orphanRemoval=true, cascade={"persist"})
      */
     private $images;
 

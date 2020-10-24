@@ -3,5 +3,61 @@
 {% block title %} Support{% endblock %}
 
 {% block body %}
-<h1>Nous Contacté HELP !!!!!!<h1>
+<main class="main-content">
+    <div class="container">
+        <h1>Rejoins-nous !</h1>
+        <p class="text-center">Pour découvrir et explorer le monde du jeu de rôle avec les membres de l'association.</p>
+        <div class="row">
+            <div class="col-lg-6 iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.808588766073!2d1.903296415928147!3d47.901389979205355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4e4d3e1374bcb%3A0xd1d2c991d21610f8!2s46%20ter%20Rue%20Sainte-Catherine%2C%2045000%20Orl%C3%A9ans!5e0!3m2!1sfr!2sfr!4v1597153634103!5m2!1sfr!2sfr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="col-lg-6 bg-img-contact">
+                <address>
+                    <p class="text-center">6 ter rue Sainte Catherine <br>45000 Orléans</p>
+                    <a href="mailto:lbdr@free.fr">lbdr@free.fr</a><br>
+                    <a href="tel:+33632607530">06 32 60 75 30</a>
+                </address>
+            </div>
+        </div>
+
+        <form action="contact-form.php" method="POST">
+            <div class="form-row">
+                <div class="col-lg-6 col-sm-12">
+                    <input type="text" class="form-control" placeholder="Nom">
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <input type="text" class="form-control" placeholder="Prénom">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-lg-6 col-sm-12">
+                    <input type="mail" class="form-control" placeholder="Email">
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <input type="text" class="form-control" placeholder="Téléphone">
+                </div>
+            </div>
+
+            <div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Adhésion à l'association</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Boutique</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio3">Demande d'informations</label>
+                </div>
+            </div>
+
+            <div class="form-row col-lg-12">
+                <textarea class="form-control" placeholder="Message"></textarea>
+            </div>
+            <button class="btn btn-submit" type="submit">Envoyer</button>
+        </form>
+    </div>
+</main>
 {% endblock %}

@@ -5,33 +5,10 @@
     <meta name="description" content="Les bâtisseur de rêve">
     
 
-    <style>
-    body{
-    background: rgb(12,34,57);
-    background: linear-gradient(90deg, rgba(12,34,57,1) 0%, rgba(27,103,150,1) 100%);
     
 
-    }
-   
-
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 1200px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
         <title>{% block title %}Welcome!{% endblock %}</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.2/main.min.css" integrity="sha256-uq9PNlMzB+1h01Ij9cx7zeE2OR2pLAfRw3uUUOOPKdA=" crossorigin="anonymous">
+
         {% block stylesheets %}
             
             {{ encore_entry_link_tags('app') }}
@@ -60,10 +37,7 @@
         <a class="nav-link" href="game">Les jeux</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="album">L'album</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="gallery">La gallerie</a>
+        <a class="nav-link" href="album">album</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="gallery">La gallerie</a>
@@ -78,22 +52,20 @@
   </div>
 </nav>
 
-        <main role="main" class="container mt-5">
+        
             {% block body %}
-            <style>
-  
-    </style>
+          
             {% endblock %}
-        </main>
+        
 
-        <footer class="main-footer bg-gradient">
-<nav class="navbar fixed-bottom navbar-light bg-light">
+        <footer class="main-footer ">
+<nav class="navbar fixed-bottom navbar-light ">
         <div class="container text-center">
             <div class="row">
                 <div class="col-md-4"><a href="term_of_sale">mentions légales</a></div>
                 <div class="col-md-4"><a href="https://www.facebook.com/BatisseursDeReves" target="_blank">facebook</a></div>
                 <div class="col-md-4"><a href="support">contactez-nous</a></div>
-                <div class="col-md-4"><a href="support">Qui sommes nous</a></div>
+                <div class="col-md-4"><a href="about_us">Qui sommes nous</a></div>
                 <div class="col-md-4"><a href="product">Boutique</a></div>
                 
             </div>
@@ -103,9 +75,8 @@
 </nav>
     </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.2/main.min.js" integrity="sha256-mMw9aRRFx9TK/L0dn25GKxH/WH7rtFTp+P9Uma+2+zc=" crossorigin="anonymous"></script>
+  
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
+            
         {% endblock %}
-    </body>
-</html>

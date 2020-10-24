@@ -1,0 +1,14 @@
+.legal {
+    margin-left: 6em;
+    margin-right: 6em;
+}
+.legal-title {
+  font-size: 2rem;  
+  text-align: center;
+}
+
+@media (max-width: 993px) {
+  .legal {
+      margin: 0 1.5rem;
+  }
+}

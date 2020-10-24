@@ -1,23 +1,2 @@
-@import "~bootstrap/scss/bootstrap";  
-body{
-    background: rgb(12,34,57);
-    background: linear-gradient(90deg, rgba(12,34,57,1) 0%, rgba(27,103,150,1) 100%);
-    
-
-    }
-   
-
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 1200px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+//@import "~bootstrap/scss/bootstrap";  
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
