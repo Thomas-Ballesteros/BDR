@@ -8,7 +8,8 @@
 {% for image in album.images %}
     <div>
      <img src="{{asset('/uploads/' ~ image.name)}}" alt="Image" width="300">
-     <a href="{{path('album_delete_image', {id: image.id})}}" data-delete data-token="{{csrf_token('delete' ~ image.id)}}">Supprimé</a>
+     <a href="{{path('album_delete_image', {id: image.id})}}" 
+     data-delete data-token="{{csrf_token('delete' ~ image.id)}}">Supprimé</a>
      
     </div>
 
@@ -18,7 +19,7 @@
     <button type="submit" class="btn btn-primary">{{ button_label|default('Save') }}</button>
 {{ form_end(form) }}
 {% block javascript %}
-{#<script>window.onload = () => {
+<script>window.onload = () => {
   //Gestion des boutons "Supprimer"
   let links = document.querySelectorAll("[data-delete]")
   // On boucle sur links
@@ -50,4 +51,4 @@
 
   
   }</script>
-#}{% endblock  %}
+{% endblock  %}

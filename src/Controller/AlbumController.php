@@ -144,11 +144,11 @@ class AlbumController extends AbstractController
             $em->flush();
 
             //on répond en json
-            return new jsonResponse(['success'=> 1]);
+            return new JsonResponse(['success'=> 1]);
             
             
         }else{
-            return new jsonResponse(['error'=> 'Token invalide', 400]);
+            return new JsonResponse(['error'=> 'Token invalide', 400]);
             
         }
     }

@@ -1,19 +1,20 @@
 {% extends 'base.html.twig' %}
-{% set title = "La Galerieeeee!!!" %}
+{% set title = "Les Galerieeeees!!!" %}
 
 {% block title %}{{ title }}{% endblock %}
 
 
 {% block body %}
     
+    <main>
 
     <div class="container">
     
     <header class="page-header">
         <h2 class="page-title">{{ title }}</h2>
     </header>
-    
         {% for album in albums %}
+        
             <tr>
                 <td>{{ album.id }}</td>
                 <td>{{ album.title }}</td>
@@ -34,4 +35,5 @@
     <a href="{{ path('album_new') }}">Create new</a>
     
     </div>
+</main>
 {% endblock %}

@@ -3,6 +3,12 @@
 {% block title %}gallery{% endblock %}
 
 {% block body %}
+{% for album in albums %}
+    <img class="img-fluid rounded " src="{{ asset('uploads/' ~ images.name) }}" alt="Image de {{ album. title}}" whidt="250">
+
+{% endfor  %}
+
+
 
 
 {% endblock %}
